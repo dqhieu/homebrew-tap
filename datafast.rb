@@ -10,7 +10,7 @@ class Datafast < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dqhieu/datafast-cli/releases/download/v1.0.0/datafast_darwin_amd64.tar.gz"
-      sha256 "1a9f87dce1cc961fb31a556a9cde1ed917bdc895eff687b580af1284c5f3d656"
+      sha256 "3a0f0ddd57d8bdf8c4a228c87681804bf5e33f7b7f452efe5cfd7f3bc970532e"
 
       define_method(:install) do
         bin.install "datafast"
@@ -18,7 +18,7 @@ class Datafast < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dqhieu/datafast-cli/releases/download/v1.0.0/datafast_darwin_arm64.tar.gz"
-      sha256 "3a1f243d247b236d67e2dc4ed658399c618d7be0c77fc4879225b712525ca560"
+      sha256 "ac00ebfd9e8fc576c7d4257d03667a27fd19d05f25917b16ab799e389a004fe6"
 
       define_method(:install) do
         bin.install "datafast"
@@ -29,14 +29,14 @@ class Datafast < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dqhieu/datafast-cli/releases/download/v1.0.0/datafast_linux_amd64.tar.gz"
-      sha256 "deffd9afce7231cff842df31f9f8525c82d7916c23ac12cd3a300a22bcfbd15d"
+      sha256 "2616b622072b7197a5511d4bae43a4268a745a270b00ff3a56f9e938f55c1d89"
       define_method(:install) do
         bin.install "datafast"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dqhieu/datafast-cli/releases/download/v1.0.0/datafast_linux_arm64.tar.gz"
-      sha256 "68559a92e4cb231f22cc539ff7385013d12deadf060fe416d9a362ef66b92df8"
+      sha256 "b9c64925147e92f755568df763aa395d451938dfd698c30103f0aae0a7336044"
       define_method(:install) do
         bin.install "datafast"
       end
