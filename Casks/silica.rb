@@ -1,6 +1,6 @@
 cask "silica" do
-  version "0.6.0"
-  sha256 "0a8d00e827b882861c69b401a99e6b41e43280f24199836ebcb7f3153e3a1614"
+  version "0.7.0"
+  sha256 "85b59a28a79f67c5aa7589be3c6d897b0c223a07069360138a2a03819682d76c"
 
   url "https://github.com/dqhieu/Silica/releases/download/v#{version}/Silica-#{version}.dmg"
   name "Silica"
