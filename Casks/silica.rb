@@ -1,6 +1,6 @@
 cask "silica" do
-  version "0.7.0"
-  sha256 "85b59a28a79f67c5aa7589be3c6d897b0c223a07069360138a2a03819682d76c"
+  version "0.8.0"
+  sha256 "9eace6d025f5d8e8f00a369261f1830e123d37dafbc8f7e3e035f2c38afee6ee"
 
   url "https://github.com/dqhieu/Silica/releases/download/v#{version}/Silica-#{version}.dmg"
   name "Silica"
@@ -16,6 +16,7 @@ cask "silica" do
   depends_on macos: :sequoia
 
   app "Silica.app"
+  binary "#{appdir}/Silica.app/Contents/Resources/silica"
 
   zap trash: [
     "~/Library/Caches/com.hieudinh.Silica",
