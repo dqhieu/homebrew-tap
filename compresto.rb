@@ -5,7 +5,7 @@
 class Compresto < Formula
   desc "Compress videos, images, GIFs and PDFs from the command-line"
   homepage "https://compresto.app"
-  version "0.1.0"
+  version "0.2.0"
 
   depends_on "ffmpeg"
   depends_on "ghostscript"
@@ -15,8 +15,8 @@ class Compresto < Formula
   depends_on "webp"
   depends_on :macos
 
-  url "https://github.com/dqhieu/compresto-cli-releases/releases/download/v0.1.0/compresto_0.1.0_macos.tar.gz"
-  sha256 "238eab349a6ae70bf8accabd2607e8c85a4700c427fc4614926895aca5bd49a2"
+  url "https://github.com/dqhieu/compresto-cli-releases/releases/download/v0.2.0/compresto_0.2.0_macos.tar.gz"
+  sha256 "bde94b06c75a220ddb141ad7856e8d0fba1f1106508ec358ddf4effa85e9c5e0"
 
   define_method(:install) do
     bin.install "compresto"
